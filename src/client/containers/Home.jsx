@@ -1,4 +1,5 @@
-import React from "react"
+import React, { Fragment } from "react"
+import FeaturedCocktail from "../components/FeaturedCocktail"
 
 const Home = () => {
   return (
@@ -15,7 +16,8 @@ const Home = () => {
       <div id="featured-cocktail-button-container">
         <h2>Our favorite cocktails</h2>
       </div>
-      <div id="find-your-cocktails-container">
+      <Fragment>
+        <FeaturedCocktail />
         <div className="cocktail-function">
           <h1>Search By Name</h1>
         </div>
@@ -25,7 +27,7 @@ const Home = () => {
         <div className="cocktail-function">
           <h1>Surprise Me</h1>
         </div>
-      </div>
+      </Fragment>
     </div>
   )
 }
