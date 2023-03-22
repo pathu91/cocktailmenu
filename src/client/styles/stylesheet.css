@@ -1,45 +1,70 @@
-* {
-    border: 0;
-    margin: 0;
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
-/* Nav Bar */
+/* ------------------- Nav Bar ------------------- */
 #nav-bar-container {
-    display: flex;
-    list-style: none;
-    width: 100vw;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  height: 5vh;
+  align-items: center;
+  justify-content: space-between;
 }
 #nav-links,
 #nav-socials {
-    display: flex;
+  display: flex;
 }
 #nav-links li,
 #nav-socials li {
-    text-align: center;
-    width: 5vw;
+  text-align: center;
+  width: 5vw;
 }
-/* Home Page */
 
-/* Featured Box */
+/* ------------------- Home Page ------------------- */
+
+/* MAIN BOX */
 #mainHome {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  width: 100vw;
 }
+
+/* Featured Cocktail Banner */
 #featured-container {
-    display: grid;
-    height: 15vw;
-    width: 50vw;
-    grid-template-areas:
-        "c c a"
-        "c c a"
-        "c c a";
+  width: 65rem;
+  height: 65rem;
+  display: grid;
+  grid-template-areas:
+    "c c c c c a"
+    "c c c c c a"
+    "c c c c c .";
 }
 
 #featured-cocktail {
-    grid-area: "c";
+  grid-area: c;
+  background-color: aqua;
 }
 
-#featured-accent {
-    grid-area: "a";
+#featured-accent-box {
+  grid-area: a;
+  background-color: blueviolet;
+}
+
+#featured-cocktail-button-container {
+  background-color: pink;
+}
+
+/* Find Your Cocktail */
+
+#find-your-cocktails-container {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-around;
+}
+
+.cocktail-function {
+  background-color: chocolate;
 }
