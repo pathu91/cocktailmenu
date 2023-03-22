@@ -13,7 +13,9 @@ app.get('/', (req, res) =>
   res.status(200).sendFile(path.resolve(__dirname, '../../dist/index.html'))  
 );
 
-
+app.get('/abc', (req, res) =>
+  res.status(200).sendFile(path.resolve(__dirname, '../../dist/index.html'))  
+);
 // global error handler
 app.get("*", (req, res) => {
   console.log('error in catch all handler')
