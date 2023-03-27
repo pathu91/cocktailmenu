@@ -28,14 +28,14 @@ body {
 #mainHome {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 97vh;
   width: 100vw;
 }
 
 /* Featured Cocktail Banner */
-#featured-container {
-  width: 65rem;
-  height: 65rem;
+#home-welcome-container {
+  width: 75vw;
+  height: 75vh;
   display: grid;
   grid-template-areas:
     "c c c c c a"
@@ -43,12 +43,12 @@ body {
     "c c c c c .";
 }
 
-#featured-cocktail {
+#welcome-banner {
   grid-area: c;
   background-color: aqua;
 }
 
-#featured-accent-box {
+#welcome-accent-box {
   grid-area: a;
   background-color: blueviolet;
 }
@@ -57,14 +57,23 @@ body {
   background-color: pink;
 }
 
-/* Find Your Cocktail */
+/* Cocktail Search */
 
-#find-your-cocktails-container {
+#cocktail-search-container {
   display: flex;
-  flex: 0 1 auto;
   justify-content: space-around;
 }
 
 .cocktail-function {
   background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Featured Cocktail */
+
+.featured-cocktail-preview {
+  height: 100px;
+  width: 100px;
 }
