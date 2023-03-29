@@ -4,12 +4,10 @@ export const NavBar = () => {
     // <Fragment>
     <div id="nav-bar-container">
       <div id="nav-links">
-        <li>
+        <div id="link-container">
           <Link to="/abc">Test</Link>
-        </li>
-        <li>
           <Link to="/xyz">Burritos</Link>
-        </li>
+        </div>
       </div>
       <div id="nav-socials">
         <li ahref="#">FB</li>
